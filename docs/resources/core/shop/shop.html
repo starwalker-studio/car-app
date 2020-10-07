@@ -1,0 +1,88 @@
+
+</div>
+<div class="display-card-row">
+    <div class="shop-table-info">
+            <div class="fix-table-my-car">
+                <table class="table table-borderless table-centered mb-0" 
+                    id="car-shop-data" style="width: 100%;">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Car</th>
+                            <th>Model</th>
+                            <th>Type</th>
+                            <th>Color</th>
+                            <th>Price</th>
+                            <th>Buy</th>
+                            <th ng-hide="true">ID</th>
+                        </tr>
+                    </thead>
+                    <tbody id="purchases">
+                        <tr ng-repeat="car in carCatalog">
+                            <td>
+                                <img id="car-img" src="{{car.img}}" style="width: 13em;">
+                            </td>
+                            <td style="padding-top: 32px; font-weight: bold;">{{ car.model }}</td>
+                            <td style="padding-top: 32px;">{{ car.type }}</td>
+                            <td style="padding-top: 32px; color: {{car.font_color}}">{{ car.color }}</td>
+                            <td style="padding-top: 32px;">${{ car.price }}</td>
+                            <td style="padding-top: 32px; padding-right: 24px;">
+                                <a type="button" ng-click="addCar()" class="text-muted"> <i class="fa fa-plus"></i></a>
+                            </td>
+                            <td ng-hide="true" style="padding-top: 32px; font-weight: bold;">{{ car.id }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+    </div>
+
+    <nav class="col-md-2 bg-light sidebar sidebar-shop-content">
+		<div class="sidebar-shop">
+			<div class="border p-3 mt-4 mt-lg-0 rounded">
+                <h5 class="header-title mb-3" style="text-align: center;">
+                    Order Summary
+                <a type="button" ng-click="emptyTrash()" ng-show="trash"
+                class="text-muted"> <i class="fa fa-trash"></i></a> 
+                </h5>
+                <table class="table table-borderless table-centered mb-0" id="add-data" >
+                    <thead class="">
+                        <tr>
+                            <th>Car Selection:</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart" style="text-align: center;">
+
+                    </tbody>
+                </table>
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <tbody>
+                            <tr>
+                                <td>Grand Total :</td>
+                                <td id="total-car"></td>
+                            </tr>
+                            <tr>
+                                <td>Shipping Charge :</td>
+                                <td>$25</td>
+                            </tr>
+                            <tr>
+                                <td>Estimated Tax : </td>
+                                <td>$19.22</td>
+                            </tr>
+                            <tr>
+                                <th>Total :</th>
+                                <th id="total"></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <p style="font-style: italic;
+                        text-align: center;
+                        color: brown">
+                        At least 3 different cars.
+                    </p>
+                </div>
+            </div>
+	</nav>
+    
+</div>

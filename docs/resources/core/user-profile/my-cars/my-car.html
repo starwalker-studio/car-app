@@ -1,0 +1,88 @@
+<div class="mycar-table-info">
+    <div class="mycar-background-title">
+        <div class="info-title">
+            <h4 class="font-weight-bold">My Cars info</h4>
+            <p>For more details for payment or issues with your car please contact: <strong>support@ford.com</strong></p>
+        </div>
+    </div>
+    <div class="" >
+        <div class="fix-table-my-car">
+            <table class="table table-centered mb-0" id="car-table-data" >
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Model</th>
+                        <th>Payment Status</th>
+                        <th>Total</th>
+                        <th>Payment Method</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="purchases">
+                    <tr ng-repeat="myCar in myCars">
+                        <td class="font-weight-bold">{{ myCar.id }}</td>
+                        <td>{{ myCar.date }}</td>
+                        <td>{{ myCar.name }}</td>
+                        <td class=""><span class="{{myCar.table_detail_payment}}">{{myCar.payment_account}}<span
+                            class="{{myCar.table_detail_icon}}"></span></span></td>
+                        <td>{{ myCar.amount_account }}</td>
+                        <td class="font-weight-bold">{{ myCar.card }}</td>
+                        <td>
+                            <a type="button" ng-click="loadCar()" class="text-muted"> <i class="fa fa-eye"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="car-info-selection" ng-show="showCarDetails"> 
+     
+    <div style="display: flex;">
+        <div class="car-info-img">
+            <img src="" id="img-car" style="
+            width: 500px;
+            position: relative;
+            bottom: 75px;">            
+        </div>
+        <div style="width: -webkit-fill-available; padding: 33px;">
+            <div class="progress" style="height: 20px;"> 
+                <div class="progress-bar bg-success" id="top-speed-bar" style="width: 0;"> 
+                    <p id="top-speed-text" style="font-size: 19px;
+                    padding-top: 12px;
+                    font-style: italic;"></p>
+                </div> 
+            </div><br> 
+              
+            <div class="progress" style="height: 20px;"> 
+                <div class="progress-bar bg-warning" id="acc-bar" style="width: 0;"> 
+                    <p id="acc-text" style="font-size: 19px;
+                    padding-top: 12px;
+                    font-style: italic;"></p>
+                </div> 
+            </div><br> 
+              
+            <div class="progress" style="height: 20px;"> 
+                <div class="progress-bar bg-danger" id="fuel-bar" style="width: 0;"> 
+                    <p id="fuel-text" style="font-size: 19px;
+                    padding-top: 12px;
+                    font-style: italic;"></p>
+                </div> 
+            </div><br> 
+              
+            <div class="progress" style="height: 20px;"> 
+                <div class="progress-bar bg-info" id="brakes-bar" style="width: 0;"> 
+                    <p id="brakes-text" style="font-size: 19px;
+                    padding-top: 12px;
+                    font-style: italic;"></p> 
+                </div>
+        </div>
+    </div>     
+     
+    <div style="text-align: end; padding-right: 12px; padding-top: 5px;">
+        <b><a type="button" ng-click="close()" class="text-muted"> <i class="fa fa-times"></i></a></b>        
+    </div>
+    </div><br> 
+</div>

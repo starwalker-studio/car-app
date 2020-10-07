@@ -1,0 +1,65 @@
+<div class="card-body-header">
+	<h3 class="">{{user.name}}</h3>
+	<p class="">{{user.job}}</p>
+</div>
+
+<div class="display-card-row-container">
+	<div class="profile-content-info">
+		<div class="image">
+			<img class="my-img" src="resources\img\561972_10150992846540410_317373639_n.jpg">
+		</div>
+		<div class="card-background-title">
+			<div class="info-title">
+				<h5 class="font-weight-bold">My info</h5>
+				<p>{{user.user_msj}}</p>
+
+			</div>
+		</div>
+		<div class="card-info">
+			<div class="info-dashboard">
+				<div class="info-box-title">
+					<p>Full Name:</p>
+					<p>Location:</p>
+					<p>Adress:</p>
+					<p>Phone:</p>
+					<p>Mail:</p>
+					<p>Date Register:</p>
+				</div>
+				<div class="info-box-data">
+					<p>{{user.name}} {{user.last_name}}</p>
+					<p>{{user.location}}</p>
+					<p>{{user.address}}</p>
+					<p>{{user.phone}}</p>
+					<p>{{user.mail}}</p>
+					<p>{{user.date_register}}</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="table-dashboard-body">
+		<div class="table-dashboard-background-title">
+			<div class="info-title" style="padding: 25px;">
+				<h5 class="font-weight-bold">My Car(s)</h5>
+			</div>
+		</div>
+		<div class="fix-table">
+			<table class="table" id="tablaaaaa" style="color: rgb(255, 255, 255);">
+				<thead class="thead-dark" style="text-align: center;">
+					<tr style="text-align: center;">
+						<th class="">Model</th>
+						<th class="">Status</th>
+					</tr>
+				</thead>
+				<tbody id="purchases" class="">
+					<tr class="" ng-repeat="myCar in account" style="text-align: center;">
+						<td class="font-weight-bold">{{ myCar.name }}</td>
+						<td class=""><span class="{{myCar.table_detail_payment}}">{{myCar.payment_account}}<span
+									class="{{myCar.table_detail_icon}}"></span></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>

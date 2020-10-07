@@ -1,0 +1,107 @@
+<div class="loading-content" ng-show="loading">
+	<img src="resources/img/loading_logo.png" class="loading-logo animate-fading">
+</div>
+
+<div class="display-card-row" ng-show="!loading">
+	<nav class="col-md-2 bg-light sidebar sidebar-profile">
+		<div class="sidebar-sticky">
+			<ul class="nav flex-column">
+
+				<li class="nav-item"><a class="nav-link" type="button" ng-click="dashboardLink()">
+						Dashboard<i class="fa fa-tachometer" aria-hidden="true"></i></a></li>
+
+				<li class="nav-item"><a class="nav-link" type="button" ng-click="profileLink()">
+						Profile <i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+
+				<li class="nav-item"><a class="nav-link" type="button" ng-click="myCarLink()">
+						My Car <i class="fa fa-car" aria-hidden="true"></i></a></li>
+
+			</ul>
+
+			<h6 class="sidebar-heading px-3 mt-4 mb-1 text-muted" style="margin-right: 9px;">
+				<span>Messages</span><i class="fa fa-envelope" aria-hidden="true"></i>
+			</h6>
+
+			<div class="">
+				<div class="">
+					<div class="">
+
+						<div class="tab-content">
+							<div class="tab-pane show active p-3" id="newpost">
+								<!-- users -->
+								<div class="row">
+									<div class="col">
+										<div data-simplebar="init" style="max-height: 550px">
+											<div class="simplebar-wrapper" style="margin: 0px;">
+												<div class="simplebar-mask">
+													<div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+														<a href="javascript:void(0);" class="text-body">
+															<div class="media mt-1 p-2">
+																<div class="media-body">
+																	<h5 class="mt-0 mb-0 font-14">
+																		<span
+																			class="float-right text-muted font-12">4:30am</span>
+																		Support
+																	</h5>
+																	<p class="mt-1 mb-0 text-muted"
+																		style="font-size: small;">
+																		<span class="w-75">Account Update...</span>
+																	</p>
+																</div>
+															</div>
+														</a>
+														<a href="javascript:void(0);" class="text-body">
+															<div class="media mt-1 p-2">
+																<div class="media-body">
+																	<h5 class="mt-0 mb-0 font-14">
+																		<span
+																			class="float-right text-muted font-12">10:15am</span>
+																		Ford-Team
+																	</h5>
+																	<p class="mt-1 mb-0 text-muted"
+																		style="font-size: small;">
+																		<span class="w-75">Payment options...</span>
+																	</p>
+																</div>
+															</div>
+														</a>
+														<a href="javascript:void(0);" class="text-body">
+															<div class="media mt-1 p-2">
+																<div class="media-body">
+																	<h5 class="mt-0 mb-0 font-14">
+																		<span
+																			class="float-right text-muted font-12">05:40pm</span>
+																		Newsletter
+																	</h5>
+																	<p class="mt-1 mb-0 text-muted"
+																		style="font-size: small;">
+																		<span class="w-75">Our new Ford Focus 2021...</span>
+																	</p>
+																</div>
+															</div>
+														</a>
+													</div> <!-- end Tab Pane-->
+												</div> <!-- end tab content-->
+											</div> <!-- end card-body-->
+										</div> <!-- end card-->
+									</div>
+
+								</div>
+	</nav>
+	<!-- DashBoard -->
+	<div id="dashboard" class="card-container" ng-controller="dashboardCtrl" ng-include
+		src="'resources/core/user-profile/dashboard/dashboard.html'" ng-show="dashBoard">
+
+	</div>
+	<!-- Profile -->
+	<div id="profile" class="card-container" ng-controller="profileCtrl" ng-include
+		src="'resources/core/user-profile/edit-profile/profile.html'" ng-show="userProfile">
+
+	</div>
+	<!-- MyCar -->
+	<div id="my-car" class="card-container" ng-controller="carCtrl" ng-include
+		src="'resources/core/user-profile/my-cars/my-car.html'" ng-show="myCar">
+
+	</div>
+
+</div>
