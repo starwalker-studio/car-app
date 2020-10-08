@@ -7,452 +7,487 @@ body {
     margin: auto;
 }
 
-.main-content {
-    margin: auto;
-    padding-bottom: 98px;
-    border-radius: 20px;
+@media only screen and (max-width: 2050px) {
+
+    .main-content {
+        margin: auto;
+        padding-bottom: 98px;
+        border-radius: 20px;
+    }
+
+    .home-car-info {
+        background: url(img/homeCar.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 80px;
+    }
+
+    .home-car-title {
+        padding-top: 5em;
+        padding-left: 8em;
+        display: flex;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .button-info-style {
+        margin-top: 1em;
+        margin-right: 50em;
+        width: 200px;
+        height: 40px;
+    }
+
+    .avatar-nav-logo {
+        padding-left: 68px;
+        margin: auto;
+        width: auto;
+        height: 35px;
+        padding-right: 20px;    
+    }
+
+    .nav-log-in {
+        margin: auto;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: 48em;
+    }
+
+    .see-more-container {
+        background-color: rgb(43, 49, 58);
+        width: auto;
+        color: rgba(255, 255, 255, 1);
+        padding: 5ex;
+    }
+
+    /*side bar*/
+
+    .sidebar-profile {
+        height: 39em;
+        background-color: #edf2f9!important;
+        padding: 0.5em;
+        text-align: start;
+        font-weight: bold;
+        text-align: -webkit-right;
+    }
+
+    /* Dashboard */
+
+    .display-card-row, .display-card-row-container {
+        display: flex;
+        /* width: fit-content; */
+    }
+
+    .display-card-row-container {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol";
+        color: #6d6d6d;
+        
+    }
+
+    .card-container {
+        width: -webkit-fill-available;
+        padding-right: 1ex;
+    }
+
+    .card-info, .mail-password-box {
+        display: flex;
+        text-align-last: left;
+        margin-top: 20px;
+    }
+
+    .card-body-header, .card-body, .card-body-table, .register-content, .profile-body{
+        border-radius: .25rem;
+        text-align: initial;
+        box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+    }  
+
+    .card-body, .profile-body, .card-body-table {
+        padding: 36px;
+        background-color: white;
+        
+    }
+
+    .profile-body {
+        margin-top: 1ex; 
+    }
+
+    .profile-content-info {
+        font-size: 14px;
+        margin-right: 1ex;
+        width: 61em;
+        margin-top: 1ex;
+        border-radius: .25rem;
+        text-align: initial;
+        background-color: white;
+        box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+        
+    }
+
+    .mycar-table-info {
+        font-size: 14px;
+        margin-top: 1ex;
+        border-radius: .25rem;
+        background-color: white;
+        box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);    
+    }
+
+    .shop-table-info {
+        font-size: 14px;
+        width: 83em;
+        border-radius: .25rem;
+        background-color: white;
+        box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);    
+    }
+
+    .card-background-title {
+        height: 110px;
+        background: rgb(223,157,49);
+        background: linear-gradient(167deg, rgba(223,157,49,1) 0%, rgba(238,200,116,1) 100%);
+        border-radius: .25rem .25rem 0px 0;
+    }
+
+    .table-dashboard-background-title {
+        height: 85px;
+        background: rgb(37,148,139);
+        background: linear-gradient(180deg, rgba(37,148,139,1) 0%, rgba(15,102,95,1) 100%);
+        border-radius: .25rem .25rem 0px 0;
+        text-align: start;
+    }
+
+    .mycar-background-title {
+        height: 110px;
+        background: rgb(53,156,186);
+        background: linear-gradient(0deg, rgba(53,156,186,1) 0%, rgba(19,116,145,1) 100%);
+        border-radius: .25rem .25rem 0px 0;
+    }
+
+    .shop-background-title {
+        height: 65px;
+        background: rgb(233,127,82);
+        background: linear-gradient(180deg, rgba(233,127,82,1) 0%, rgba(156,43,6,1) 100%);
+        border-radius: .25rem .25rem 0px 0;
+        position: sticky;
+        top: 50px;
+    }
+
+    .profile-background-title {
+        margin-top: 4ex;
+        height: 60px;
+        background: rgb(125,125,125);
+        background: linear-gradient(151deg, rgba(125,125,125,1) 0%, rgba(94,94,94,1) 100%);
+        border-radius: .25rem .25rem 0px 0;
+        box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+        padding: 10px;
+        color: white;
+    }
+
+    .table-dashboard-body{
+        width: -webkit-fill-available;
+        border-radius: .25rem;
+        background-color: rgb(102, 148, 146);
+        box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+    }
+
+    .image {
+        position: absolute;
+        top: 243px;
+        left: 648px;
+    }
+
+    .my-img {
+        width: 95px;
+        height: 86px;
+        border-radius: 6px;
+    }
+
+    .info-title {
+        color: white;
+        padding: 25px;
+    }
+
+    .card-body, .card-body-table, .table-dashboard-body {
+        margin-top: 1ex;
+    }  
+
+    .card-body-header {
+        margin-top: 1ex;
+        background-image: -webkit-linear-gradient(135deg,#014ba7,#0183d0);
+        background-image: linear-gradient(-45deg,#014ba7,#0183d0);
+        color: #ffffff;
+        height: 115px; 
+        padding: 20px;
+        padding-left: 30px;
+        text-align: start;       
+    }
+
+    .card-body, .register-content {
+        font-size: 14px;
+    }
+
+    .card-body {    
+        width: auto;        
+    }
+
+    /*Table Fix*/
+    .fix-table {
+        margin: 0ex auto;
+        width: -webkit-fill-available;
+    }
+    .fix-table-my-car {
+        margin: 0ex auto;
+        width: -webkit-fill-available;
+        text-align-last: center;
+    }
+
+    .card-body-table {
+        width: -webkit-fill-available;
+    }
+
+    .info-profile, .info-profile-data, .info-dashboard {
+        display: flex;
+        padding-left: 25px;
+    }
+
+    .info-dashboard {
+        padding-bottom: 8px;    
+    }
+
+    .info-box-title {	
+        width: 22ex;
+        text-align: initial;
+        font-weight: bold;
+    }
+
+    .info-box-data {
+        width: auto;
+    }
+
+    .info-box-data-edit {
+        padding-right: 55px;
+        width: -webkit-fill-available;
+    }
+
+    .input-edit-data {
+        padding: 4px;
+    }
+
+    .profile-msj-fix {
+        padding-bottom: 32px;
+    }
+
+    /*Change Mail Password panel*/
+    .mail-password-box {
+        margin: 3ex auto;
+        padding-left: 9ex;
+    }
+
+    .mail-password-edit {
+        padding-right: 4ex;
+        text-align: end;
+    }
+
+    .mail-password-edit-box {
+        width: 55ex;
+    }
+
+    .header-table-mycar {
+        background-color: #686c6f;
+        color: white;
+        text-align: center;
+        width: 100% !important;
+        table-layout:fixed;
+    }
+
+    .table-data-mycar {
+        background-color: #f4f9ff!important;
+        color: darkslategrey;
+        text-align: center;	
+    }
+
+    .mycar-table-width {
+        width: 100%;
+    }
+
+    .must-contain-edit-password {
+        font-style: italic;
+        text-align: end;
+        color: red;
+    }
+
+    .adverstisment-style {
+        color: darkgrey;
+        font-style: italic;
+    }
+
+    .format-font-profile {
+        text-align: left;
+    }
+
+    /*loading animation*/
+
+    .loading-content{
+        margin: 15em auto;
+    }
+
+    .loading-logo{
+        width: 140px;
+    }
+
+    .animate-fading {
+        -webkit-animation: fadeIn ease 1.2s infinite;
+    }
+
+    /* register */
+    .register-box {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .register-content{
+        width: 85em;
+        background-color: white;
+    }
+
+    /* payment process */
+
+    .badge-soft-secondary {
+        color: #7d899b;
+        background-color: #e3e6ea;
+    }
+
+    .rounded-capsule {
+        width: 12ex;
+    }
+    .badge-soft-success {
+        color: #00864e;
+        background-color: #97efae;
+    }
+
+    .badge-soft-warning {
+        color: #c46632;
+        background-color: #fde6d8;
+    }
+
+    .mycar-show-data{
+        width: 500px;
+        position: relative;
+        bottom: 75px;
+    }
+
+    /* Progress Bar */
+    .car-info-selection {
+        height: 227px;
+        margin-top: 2ex;
+        border-radius: .25rem;
+        background: url("img/background-car-info.png");
+        box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07); 
+    }
+
+    .car-info-img {
+        width: 600px;
+        margin: 0 auto;
+        /* padding: 34px; */
+    }
+
+    /* edit original */
+    .nav-link {color: #4a5c6e;}
+    .nav-link:hover {color: #1b1b1b;}
+    .fa-tachometer {padding-right: 1ex;}
+    .fa-user-circle {padding-right: 1ex;}
+    .fa-car {padding-right: 1ex;}
+    .fa-cog {padding-right: 1ex;}
+    .fa-credit-card {padding-right: 1ex;}
+    .font-weight-bold {padding-right: 3ex;}
+    .fa {padding-left: 1.5ex;}
+    .badge {padding: 0.40em .4em;}
+    .table {
+        font-size: 15px;
+        font-family: Nunito,sans-serif;
+        color: #6c757d;
+    }
+    .alert{text-align: center;}
+    .dataTables_length {
+        padding-left: 40px;
+        padding-right: 40px;
+        float: none;
+    }
+    .dataTables_filter {
+        padding-left: 40px;
+        padding-right: 70px;
+        float: none;
+    }
+    .dataTables_info {
+        padding-left: 40px;
+        font-size: 16px;
+        font-style: italic;
+    }
+    label {
+        display: flex;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    /* ------------- */
+
+    .sidebar-sticky{
+        background-color: white;
+        border-radius: .25rem;
+        box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+        height: -webkit-fill-available;
+        padding: 16px;
+    }
+
+    .sidebar-shop {    
+        padding: 10px;
+    }
+
+    .sidebar-shop-content {
+        font-weight: bold;
+        text-align: -webkit-right;
+        position: fixed;
+        right: 0;
+        max-width: 22em; 
+        height: -webkit-fill-available;
+        background-color: #ffff!important;
+        /* color: aliceblue; */
+    }
+
 }
 
-.home-car-info {
-    background: url(img/homeCar.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 600px;
-    margin-bottom: 80px;
-}
-
-.home-car-title {
-    padding-top: 5em;
-    padding-left: 8em;
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-}
-
-.button-info-style {
-    margin-top: 1em;
-    margin-right: 50em;
-    width: 200px;
-    height: 40px;
-}
-
-.avatar-nav-logo {
-    padding-left: 68px;
-    margin: auto;
-    width: auto;
-    height: 35px;
-    padding-right: 20px;    
-}
-
-.nav-log-in {
-    margin: auto;
-    margin-top: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: 48em;
-}
-
-.see-more-container {
-    background-color: rgb(43, 49, 58);
-    width: auto;
-    color: rgba(255, 255, 255, 1);
-    padding: 5ex;
-}
-
-/*side bar*/
-
-.sidebar-profile {
-	height: 39em;
-    background-color: #edf2f9!important;
-    padding: 2em;
-    text-align: start;
-    font-weight: bold;
-    text-align: -webkit-right;
-}
-
-/* Dashboard */
-
-.display-card-row, .display-card-row-container {
-	display: flex;
-}
-
-.display-card-row-container {
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-		Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-		"Segoe UI Emoji", "Segoe UI Symbol";
-	color: #6d6d6d;
+@media only screen and (max-width: 1440px) {
+    
+    .sidebar-sticky {
+        padding: 13px;
+    }
+    .mycar-show-data {
+        width: 500px;
+        position: relative;
+        bottom: 72px;
+    }
+    .fix-table-my-car {
+        text-align-last: auto;
+    }
+    .shop-table-info {
+        width: 77.5em;
+    }
+    .image {
+        top: 232px;
+        left: 623px;
+    }
     
 }
 
-.card-container {
-    width: 142ex;
-}
-
-.card-info, .mail-password-box {
-    display: flex;
-    text-align-last: left;
-    margin-top: 20px;
-}
-
-.card-body-header, .card-body, .card-body-table, .register-content, .profile-body{
-	border-radius: .25rem;
-	text-align: initial;
-	box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-}  
-
-.card-body, .profile-body, .card-body-table {
-    padding: 36px;
-	background-color: white;
-	
-}
-
-.profile-body {
-    margin-top: 4ex; 
-}
-
-.profile-content-info {
-    font-size: 14px;
-    margin-right: 14px;
-    width: 85em;
-    margin-top: 2ex;
-    border-radius: .25rem;
-    text-align: initial;
-    background-color: white;
-    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-    
-}
-
-.mycar-table-info {
-    font-size: 14px;
-    margin-top: 5ex;
-    border-radius: .25rem;
-    background-color: white;
-    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);    
-}
-
-.shop-table-info {
-    font-size: 14px;
-    width: 83em;
-    border-radius: .25rem;
-    background-color: white;
-    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);    
-}
-
-.card-background-title {
-    height: 110px;
-    background: rgb(223,157,49);
-    background: linear-gradient(167deg, rgba(223,157,49,1) 0%, rgba(238,200,116,1) 100%);
-    border-radius: .25rem .25rem 0px 0;
-}
-
-.table-dashboard-background-title {
-    height: 85px;
-    background: rgb(37,148,139);
-    background: linear-gradient(180deg, rgba(37,148,139,1) 0%, rgba(15,102,95,1) 100%);
-    border-radius: .25rem .25rem 0px 0;
-    text-align: start;
-}
-
-.mycar-background-title {
-    height: 110px;
-    background: rgb(53,156,186);
-    background: linear-gradient(0deg, rgba(53,156,186,1) 0%, rgba(19,116,145,1) 100%);
-    border-radius: .25rem .25rem 0px 0;
-}
-
-.shop-background-title {
-    height: 65px;
-    background: rgb(233,127,82);
-    background: linear-gradient(180deg, rgba(233,127,82,1) 0%, rgba(156,43,6,1) 100%);
-    border-radius: .25rem .25rem 0px 0;
-    position: sticky;
-    top: 50px;
-}
-
-.profile-background-title {
-    margin-top: 4ex;
-    height: 60px;
-    background: rgb(125,125,125);
-    background: linear-gradient(151deg, rgba(125,125,125,1) 0%, rgba(94,94,94,1) 100%);
-    border-radius: .25rem .25rem 0px 0;
-    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-    padding: 10px;
-    color: white;
-}
-
-.table-dashboard-body{
-    width: -webkit-fill-available;
-    border-radius: .25rem;
-    background-color: rgb(102, 148, 146);
-    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-}
-
-.image {
-    position: absolute;
-    top: 295px;
-    left: 695px;
-}
-
-.my-img {
-    width: 95px;
-    height: 86px;
-    border-radius: 6px;
-}
-
-.info-title {
-    color: white;
-    padding: 25px;
-}
-
-.card-body, .card-body-table, .table-dashboard-body {
-	margin-top: 2ex;
-}  
-
-.card-body-header {
-    margin-top: 4ex;
-    background-image: -webkit-linear-gradient(135deg,#014ba7,#0183d0);
-    background-image: linear-gradient(-45deg,#014ba7,#0183d0);
-    color: #ffffff;
-    height: 115px; 
-    padding: 20px;
-    padding-left: 30px;
-    text-align: start;       
-}
-
-.card-body, .register-content {
-	font-size: 14px;
-}
-
-.card-body {    
-    width: auto;        
-}
-
-/*Table Fix*/
-.fix-table {
-	margin: 0ex auto;
-    width: -webkit-fill-available;
-}
-.fix-table-my-car {
-	margin: 0ex auto;
-    width: -webkit-fill-available;
-    text-align-last: center;
-}
-
-.card-body-table {
-    width: -webkit-fill-available;
-}
-
-.info-profile, .info-profile-data, .info-dashboard {
-    display: flex;
-    padding-left: 25px;
-}
-
-.info-dashboard {
-    padding-bottom: 8px;    
-}
-
-.info-box-title {	
-   	width: 22ex;
-    text-align: initial;
-    font-weight: bold;
-}
-
-.info-box-data {
-    width: auto;
-}
-
-.info-box-data-edit {
-    padding-right: 55px;
-    width: -webkit-fill-available;
-}
-
-.input-edit-data {
-	padding: 4px;
-}
-
-.profile-msj-fix {
-    padding-bottom: 32px;
-}
-
-/*Change Mail Password panel*/
-.mail-password-box {
-    margin: 3ex auto;
-    padding-left: 9ex;
-}
-
-.mail-password-edit {
-    padding-right: 4ex;
-    text-align: end;
-}
-
-.mail-password-edit-box {
-    width: 55ex;
-}
-
-.header-table-mycar {
-	background-color: #686c6f;
-    color: white;
-    text-align: center;
-    width: 100% !important;
-    table-layout:fixed;
-}
-
-.table-data-mycar {
-	background-color: #f4f9ff!important;
-    color: darkslategrey;
-    text-align: center;	
-}
-
-.mycar-table-width {
-	width: 100%;
-}
-
-.must-contain-edit-password {
-	font-style: italic;
-    text-align: end;
-    color: red;
-}
-
-.adverstisment-style {
-	color: darkgrey;
-    font-style: italic;
-}
-
-.format-font-profile {
-	text-align: left;
-}
-
-/*loading animation*/
-
-.loading-content{
-	margin: 15em auto;
-}
-
-.loading-logo{
-    width: 140px;
-}
-
-.animate-fading {
-    -webkit-animation: fadeIn ease 1.2s infinite;
-}
-
-/* register */
-.register-box {
-	margin: 0 auto;
-    width: auto;
-}
-
-.register-content{
-    width: 85em;
-    background-color: white;
-}
-
-/* payment process */
-
-.badge-soft-secondary {
-    color: #7d899b;
-    background-color: #e3e6ea;
-}
-
-.rounded-capsule {
-    width: 12ex;
-}
-.badge-soft-success {
-    color: #00864e;
-    background-color: #97efae;
-}
-
-.badge-soft-warning {
-    color: #c46632;
-    background-color: #fde6d8;
-}
-
-/* Progress Bar */
-.car-info-selection {
-    height: 227px;
-    margin-top: 2ex;
-    border-radius: .25rem;
-    background: url("img/background-car-info.png");
-    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07); 
-}
-
-.car-info-img {
-    width: 600px;
-    margin: 0 auto;
-    /* padding: 34px; */
-}
-
-/* edit original */
-.nav-link {color: #4a5c6e;}
-.nav-link:hover {color: #1b1b1b;}
-.fa-tachometer {padding-right: 1ex;}
-.fa-user-circle {padding-right: 1ex;}
-.fa-car {padding-right: 1ex;}
-.fa-cog {padding-right: 1ex;}
-.fa-credit-card {padding-right: 1ex;}
-.font-weight-bold {padding-right: 3ex;}
-.fa {padding-left: 1.5ex;}
-.badge {padding: 0.40em .4em;}
-.table {
-	font-size: 15px;
-    font-family: Nunito,sans-serif;
-    color: #6c757d;
-}
-.alert{text-align: center;}
-.dataTables_length {
-    padding-left: 40px;
-    padding-right: 40px;
-    float: none;
-}
-.dataTables_filter {
-    padding-left: 40px;
-    padding-right: 70px;
-    float: none;
-}
-.dataTables_info {
-    padding-left: 40px;
-    font-size: 16px;
-    font-style: italic;
-}
-label {
-    display: flex;
-    margin-bottom: .5rem;
-    margin-top: .5rem;
-    font-size: 16px;
-    font-weight: bolder;
-}
-/* ------------- */
-
-.sidebar-sticky{
-	background-color: white;
-    border-radius: .25rem;
-    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-   	height: -webkit-fill-available;
-    padding: 16px;
-}
-
-.sidebar-shop {    
-    padding: 10px;
-}
-
-.sidebar-shop-content {
-    font-weight: bold;
-    text-align: -webkit-right;
-    position: fixed;
-    right: 0;
-    max-width: 22em; 
-    height: -webkit-fill-available;
-    background-color: #ffff!important;
-    /* color: aliceblue; */
-}
-
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
     nav{
         width: auto;
     }
     .nav-log-in {
-        margin-left: 20em;
+        margin-left: 40em;
     }
     .home-car-title {
         padding-top: 3em;
@@ -461,6 +496,57 @@ label {
     .button-info-style {
         margin-top: 1em;
         margin-right: 30em;
+    }
+    .sidebar-profile {
+        padding: 0; 
+        font-size: 18px;       
+    }
+    .sidebar {
+        max-width: 28.666667%;
+    }
+    .sidebar-sticky{
+        margin-top: 1ex;
+    }
+    .card-container {
+        width: -webkit-fill-available;
+        margin-left: 7px;
+    }
+    .card-body-header {
+        margin-top: 1ex;
+    }
+    .table-dashboard-body {
+        width: -webkit-fill-available;
+        margin-left: 7px;
+        margin-top: 1ex;
+    }
+    .profile-content-info {
+        width: 57em;
+        margin-right: 0px;
+        margin-top: 1ex;
+    }
+    .image {
+        top: 222px;
+        left: 564px;
+    }
+    .profile-body {
+        margin-top: 1ex;
+    }
+    .mail-password-box {
+        padding-left: 3ex;
+    }
+    .mycar-table-info {
+        margin-top: 1ex;
+    }
+    .mycar-show-data {
+        width: 500px;
+        position: relative;
+        bottom: 72px;
+    }
+    .fix-table-my-car {
+        text-align-last: auto;
+    }
+    .shop-table-info {
+        width: 65em;
     }
     
 }    
