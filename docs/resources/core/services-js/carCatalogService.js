@@ -6,7 +6,7 @@ app.service('CatalogService', [function () {
         {
             id: "lambo001",
             img: "resources/img/lambo.png",
-            model: "Lamborghini Aventador",
+            model: "Lamborghini Aventador 2015",
             price: 425021,
             color: "Green",
             font_color: "darkseagreen",

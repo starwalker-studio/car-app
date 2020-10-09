@@ -19,6 +19,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 			templateUrl: 'resources/core/shop/shop.html',
 			controller: 'shopCtrl'
 		})
+		.when('/mustang',{
+			templateUrl: 'resources/core/mustang-intro/mustang.html',
+			controller: 'mustangCtrl'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});

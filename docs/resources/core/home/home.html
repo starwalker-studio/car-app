@@ -4,31 +4,37 @@
 			<h4>The legend that keeps you coming back</h4>
 		</div>
 		<div>
-			<button type="button" class="btn btn-info button-info-style" ng-click="infoCar( slide.link )">Show
+			<button type="button" class="btn btn-info button-info-style" ng-click="linkMustang()">Show
 				Details</button>
 
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row see-more-container">
-			<div class="col-md-6">
+	<div class="container" 
+	style="background-color: rgb(43, 49, 58);
+	width: auto;
+	color: rgba(255, 255, 255, 1);
+	padding: 6ex;
+    padding-left: 20ex;
+    padding-right: 20ex;">
+			
 				<h3>See more cars</h3>
 				<p>Buy or lease an eligible Ford vehicle through Ford Credit. Then, if you face financial hardship due
 					to loss of employment, you can return it within one year of purchase. It’s our way of helping you
 					move forward.</p>
-					<button type="button" class="btn btn-info" 
-							ng-click="infoCar( slide.link )">Show me more</button>
-			</div>
-			<div class="col-md-6">
-				<h3>About Us</h3>
-				<p>Since 1903, we have helped to build a better world for the people and communities that we serve.
-					Welcome to Ford Motor Company.</p>
-					<button type="button" class="btn btn-info" 
-							ng-click="infoCar( slide.link )">Learn more</button>
-			</div>
-
-		</div>
+					<button type="button" class="btn btn-info" ng-click="goShop()">Go to shop</button>
+	</div>
+	<div class="container" 
+	style="background-color: lightgrey; 
+	padding: 40px; 
+	margin-top: 4ex; 
+	color: darkslategrey;">
+		<h1>Welcome</h1>
+		<h3>This site is built with AngularJs, Html5, JavaScript and CSS.</h3>
+		<h4>This site is a demo for my habilities as web developer.</h4>
+		<img src="resources/img/logo-banner.png">
+		<button type="button" class="btn btn-info" 
+							ng-click="infoCar( slide.link )">About Me</button>
 	</div>
 
 </div>
