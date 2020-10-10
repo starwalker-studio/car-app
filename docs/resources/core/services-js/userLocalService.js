@@ -5,14 +5,14 @@ app.service('UserLocalService', [function () {
 	const user = {
 		name: "Juan Alberto",
 		last_name: "Rodriguez Sotelo",
-		mail: "starwalker@mail.com",
+		mail: "juan.rodriguez2803@hotmail.com",
 		date_register: "19/08/2020, 01:01:38",
-		location: "Cuernavaca",
+		location: "Morelos",
 		password: "qwerty12",
-		address: "Av. Rancho Viejo #72 MZ 10 Lt 7",
+		address: "Some Adrress...",
 		phone: "5529717374",
 		job: "Web Developer",
-		user_msj: "Testing new updates on application!"
+		user_msj: "Welcome this is a demo site enjoy!"
 	}
 
 	var context = this;

@@ -64,6 +64,7 @@
 <script src="resources/core/user-profile/my-cars/myCarCtrl.js"></script>
 <script src="resources/core/shop/shopCtrl.js"></script>
 <script src="resources/core/mustang-intro/mustangCtrl.js"></script>
+<script src="resources/core/about-me/aboutCtrl.js"></script>
 
 <!-- Services Js -->
 <script src="resources/core/services-js/userLocalService.js"></script>
@@ -78,9 +79,9 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-sm navbar-expand-lg sticky-top navbar-dark bg-dark" style="height: 50px;">
+	<nav class="navbar navbar-expand-sm navbar-expand-lg navbar-dark bg-dark" style="height: 60px;">
 		<a class="navbar-brand" href="#"> <img
-			src="resources/img/logo_nav_bar.png"
+			src="resources/img/autoshop-logo-nav.png"
 			class="img-responsive avatar-nav-logo">
 		</a>
 		<div class="collapse navbar-collapse" id="navbarNav">
@@ -88,15 +89,23 @@
 				<li class="nav-item"><a class="nav-link" href="#/dashboard">Dashboard</a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="#/shop">Shop</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+				<li class="nav-item"><a class="nav-link" href="#/about">About Me</a></li>
 			</ul>
 
-			<ul class="navbar-nav nav-log-in">
-				<li class="nav-item dropdown"><a
-					class="nav-link" href="#/" id="navbarDropdown"
-					role="button" data-toggle="dropdown"> <span class="fa fa-user"
-						aria-hidden="true"></span> {{user.name}} </a></li>
-			</ul>
+				<ul class="navbar-nav nav-log-in" style="text-align: center;">
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#/" id="navbarDropdown"
+						role="button" data-toggle="dropdown"> <i
+						class="fa fa-empire"></i> {{user.name}} </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<p class="dropdown-item"> 
+								<span style="font-weight: bolder;">juan.rodriguez2803@hotmail.com</span></p> 
+							<p class="dropdown-item"> 
+								<span style="font-weight: bolder;">+52 (55)-29-71-7374</span></p>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#/about">About Me</a> 
+						</div></li>
+				</ul>
 
 		</div>
 	</nav>

@@ -6,6 +6,10 @@ app.controller('homeCtrl', ['$scope', function($scope){
 
 	$scope.goShop = function() {
         window.location = '#/shop';
+	}
+	
+	$scope.goAbout = function() {
+        window.location = '#/about';
     }
 
 }]);
